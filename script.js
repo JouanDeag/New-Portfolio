@@ -22,11 +22,10 @@ $(document).ready(function () {
     ];
 
     currentHello = 0;
-    // Add class to animate welcome message
     function randomMsg(currentHello) {
         // Get random message
         let random = Math.floor(Math.random() * helloMessages.length);
-        // Make sure it's not the same as the current message
+
         if (random == currentHello) {
             randomMsg(currentHello);
         } else {
@@ -35,7 +34,10 @@ $(document).ready(function () {
     };
 
     setInterval(() => {
+
+        // Add class to animate welcome message
         $(".welcome").addClass("hide");
+
         setTimeout(() => {
             $(".welcome").text(helloMessages[randomMsg()]);
             $(".welcome").removeClass("hide");
