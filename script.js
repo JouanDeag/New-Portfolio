@@ -40,7 +40,5 @@ $(document).ready(function () {
             $(".welcome").text(helloMessages[randomMsg()]);
             $(".welcome").removeClass("hide");
         }, 500);
-
-
     }, 5000);
 });
