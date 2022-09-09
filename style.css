@@ -55,3 +55,37 @@ nav {
   text-decoration: none;
   font-weight: 700;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  height: calc(100vh - 3.8rem);
+}
+
+.front {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--accent);
+}
+
+.front h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.welcome-text {
+  padding-bottom: 15vh;
+}
+
+.hide {
+  opacity: 0 !important;
+}
+
+.welcome {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
