@@ -45,8 +45,13 @@
         <li><a href="#skills" class="nav-link">Skill set</a></li>
         <li><a href="#projects" class="nav-link">Projects</a></li>
         <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
+    <div class="notification">
+      <p>Thank you <span id="sender"></span><br />for your message!</p>
+      <img src="/smiley.gif" alt="Smile" />
+    </div>
     <header>
       <img src="/stockholm.png" alt="Stockholm" class="no-select" />
       <div class="front">
@@ -64,6 +69,14 @@
           <div>
             <h1 class="section-title">Skill set</h1>
           </div>
+          <div>
+            <ul class="skill-set">
+              <li class="skill"></li>
+              <li class="skill"></li>
+              <li class="skill"></li>
+              <li class="skill"></li>
+            </ul>
+          </div>
         </div>
       </section>
       <section id="projects">
@@ -77,6 +90,33 @@
         <div>
           <div>
             <h1 class="section-title">Experience</h1>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div>
+          <div>
+            <h1 class="section-title">Contact</h1>
+          </div>
+          <div class="form-wrapper">
+            <form method="post">
+              <label for="email" name="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="my@email.com" />
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" placeholder="John Doe" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"></textarea>
+              <p id="error"></p>
+              <button type="submit" id="sendEmail">Send</button>
+            </form>
           </div>
         </div>
       </section>

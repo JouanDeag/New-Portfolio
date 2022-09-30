@@ -175,7 +175,83 @@ section {
 }
 
 .section-title {
-  padding-top: 5rem;
+  padding-top: 6rem;
+}
+
+#contact > div {
+  height: 100%;
+}
+
+.form-wrapper {
+  margin-top: 4%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  max-width: max-content;
+  margin: 0 10% 0 auto;
+  border: var(--accent-light) 4px solid;
+  border-radius: 1rem;
+}
+
+form > * {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 2px;
+}
+
+form > textarea {
+  resize: none;
+  margin-bottom: 0.5rem;
+}
+
+.notification {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  max-width: max-content;
+  margin: 25vh 10% 0 auto;
+  border: var(--accent-light) 4px solid;
+  border-radius: 1rem;
+  position: fixed;
+  background-color: #213547;
+  left: -500px;
+  transition: all ease-in-out 1s;
+  animation: slideInRight 1s ease-in-out;
+}
+
+.notification img {
+  max-height: 100px;
+  margin-left: 2rem;
+}
+
+#error {
+  text-decoration: underline;
+  color: lightcoral;
+}
+
+@media (max-width: 768px) {
+  .front h2 {
+    text-shadow: 1px 1px 0 var(--light);
+  }
+
+  .front h3 {
+    text-shadow: 1px 1px 0 var(--light);
+  }
+
+  form {
+    margin: 0 5% 0 auto;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    margin: 0 auto 0 auto;
+  }
 }
 
 @keyframes slideInRight {
