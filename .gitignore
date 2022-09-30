@@ -26,3 +26,6 @@ dist-ssr
 # Node Files
 pnpm-lock.yaml
 package-lock.json
+
+# Build output
+*.js
