@@ -44,7 +44,7 @@ $(document).ready(function () {
     }, 500);
   }, 5000);
 
-  $('#sendEmail').click(function (e) {
+  $('#sendEmail').on('click touchstart', function (e) {
     e.preventDefault();
 
     // Get values from form
